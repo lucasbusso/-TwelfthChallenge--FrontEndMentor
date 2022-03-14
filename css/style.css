@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;800&display=swap');
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+
+    --Dark-Grayis-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+
+    font-family: 'Spartan', sans-serif;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    background-image: url("/images/bg-pattern-top-desktop.svg");
+    background-image: url("/images/bg-pattern-bottom-desktop.svg");
+    background-size: cover;
+}
+
+main{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 10rem;
+    flex-direction: column;
+    
+    background-image: url(./images/bg-pattern-top-mobile.svg),
+    url(./images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;
+    
+}
+
+.superior-half{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.superior-half-left{
+    width: 50%;
+}
+
+.superior-half-left > h1{
+    font-size: 3rem;
+    width: 25rem;
+    color: var(--Very-Dark-Magenta);
+}
+
+.superior-half-left > p{
+    margin-top: 1rem;
+    color: var(--Dark-Grayis-Magenta);
+    
+}
+
+.superior-half-right{
+    width: 50%;
+}
+
+.opinion{
+    display: inline-flex;
+    background-color: var(--Light-Grayish-Magenta);
+    align-items: center;
+    margin: 1rem 0;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-sizing: content-box;
+    width: 22rem;
+    justify-content: space-between;
+    
+}
+
+.opinion > p{
+    color: var(--Dark-Grayis-Magenta);
+    font-weight: 800;
+    font-size: .7rem;
+}
+
+.stars{
+    display: flex;
+    gap: .3rem;
+}
+
+.second-opinion{
+    margin-left: 2rem;
+}
+.third-opinion{
+    margin-left: 4rem;
+}
+
+.bottom-half-cards{
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    column-gap: 2rem;
+}
+.header-cards{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.header-cards > img{
+    max-width: 40px;
+    border-radius: 50%;
+}
+.bottom-half-cards > div{
+    background-color: var(--Very-Dark-Magenta);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+.header-cards > h4{
+    color: var(--White);
+    font-size: .9rem;
+}
+h4 > span{
+    color: var(--Soft-Pink);
+    font-weight: 300;
+}
+.bottom-half-cards > div > p{
+    color: var(--White);
+    font-weight: 300;
+    margin-top: 1rem;
+    font-size: .8rem;
+}
