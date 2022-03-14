@@ -118,14 +118,14 @@ main{
     background-color: var(--Very-Dark-Magenta);
     padding: 1.5rem;
     border-radius: 8px;
-    height: 11rem;
+    height: fit-content;
 }
 .header-cards > h4{
     color: var(--White);
     font-size: .9rem;
 }
 h4 > span{
-    color: var(--Soft-Pink);
+    color: var(--Light-Grayish-Magenta);
     font-weight: 300;
 }
 .bottom-half-cards > div > p{
@@ -142,6 +142,58 @@ h4 > span{
     margin-top: 4rem;
 }
 
-@media (min-width: 900px){
-    
+@media (max-width: 900px){
+    body{
+        max-width: 100%;
+        height: 100vh;
+    }
+    .superior-half{
+        display: block;
+        margin: 0 auto;
+    }
+    .superior-half-left{
+        width: 100%;
+    }
+    .superior-half-left > h1{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .superior-half-left > p{
+        text-align: center;
+        margin: 1.3rem auto;
+    }
+    .superior-half-right{
+        width: 100%;
+    }
+    .opinion{
+        display: block;
+        justify-content: center;
+        margin: 1rem auto;
+        width: 100%;
+        padding: 1.5rem;
+    }
+    .stars{
+        display: flex;
+        justify-content: center;
+        gap:1.2rem;
+    }
+    .opinion > p{
+        font-size: 1rem;
+        margin-top: 1.2rem;
+        text-align: center;
+    }
+    .bottom-half{
+        display: block;
+        margin: 0 auto;
+    }
+    .bottom-half-cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .bottom-half-cards > div{
+        margin: 1rem 0;
+    }
+    .header-cards > span{
+        margin-top: 1rem;
+    }
 }
